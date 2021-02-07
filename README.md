@@ -1,8 +1,8 @@
 # Programmable Telecommunications in the Cloud without Twilio
 
-This is an introduction with the basics of Programmable Telecommunications in Cloud. I created this repo in support of the annual conference [Hacking with the Homies](https://github.com/detroitblacktech/hwthdc2020). 
+This is an introduction to the basics of Programmable Telecommunications in the Cloud. I created this repo as part of the annual conference [Hacking with the Homies](https://github.com/detroitblacktech/hwthdc2020). 
 
-In this repo, I will not discuss installing a Fonos deployment because it is impractical for the event. Instead, you can request access to SaaS edition of Fonos at [Fonoster.com](http://fonoster.com/).
+I will not discuss installing a Fonos deployment in this repo because it is impractical for the event. Instead, you can request access to the SaaS edition of Fonos at [Fonoster.com](http://fonoster.com/).
 
 ## Requirements
 
@@ -13,13 +13,13 @@ In this repo, I will not discuss installing a Fonos deployment because it is imp
 
 ## Overview
 
-In this demo, I will show how to create a basic SIP Network and a Programmable Voice Application. We will then use the SDK to generate a call to phone number on the PSTN. 
+In this demo, I will show how to create a SIP Network and a Programmable Voice Application. We will then use the SDK to generate a call to a phone number on the PSTN. 
 
-> Please keep in mind that this is an early version of the platform, so issues might occur.
+> Please keep in mind that this is an early version of the platform.  Issues might occur.
 
 ## Login into the platform
 
-Use the credentials you received gain access to the platform. You can gain access with:
+Use the credentials you received to gain access to the platform. You can gain access with:
 
 ```bash
 $ fonos login
@@ -29,7 +29,7 @@ $ fonos login
 
 ## Creating a Programmable Voice Application (PVA)
 
-First, use the command `fonos apps:init` to create an empty project
+First, use the command `fonos apps:init` to create an empty project.
 
 ```
 mkdir default
@@ -47,9 +47,9 @@ module.exports = chan => chan.say('Hey homie! How are you?')
 
 ## Creating a SIPNetwork
 
-➊ First lets define a VoIP service provider and a DID with:
+➊ First, let's define a VoIP service provider, and a DID with:
 
-> Use the information, provided to you by homies
+> Use the information provided to you by homies
 
 ```bash
 $ fonos providers:create
@@ -81,7 +81,7 @@ Press ^C at any time to quit.
 Creating number 17853178070... All done
 ```
 
-➋ Now, lets create a Domain
+➋ Now, let's create a Domain
 
 ```bash
 $ fonos fonos domains:create
@@ -98,7 +98,7 @@ Press ^C at any time to quit.
 Creating domain ACME Corp... All done
 ```
 
-➌ Now, lets create an Agent
+➌ Now, let's create an Agent
 
 ```bash
 $ fonos fonos agents:create
@@ -113,7 +113,7 @@ Press ^C at any time to quit.
 ? does everything look good? Yes
 ```
 
-> You can check you work with `fonos [command]:ls
+> You can check your work with `fonos [command]:ls
 
 ## Using the SDK to call a Number
 
@@ -123,7 +123,7 @@ From within the folder of your `default` application, run the following command:
 npm i --save @fonos/sdk 
 ```
 
-Then, create a script with the this code:
+Then, create a script with this code:
 
 ```
 // This will load the SDK and reuse your Fonos credentials
@@ -133,4 +133,3 @@ const manager = new SDK.CallManager()
 // A number you want to call and the application identifier
 manager.call('1785318070', 'a445hds')
 ```
-

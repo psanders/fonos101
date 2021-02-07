@@ -46,6 +46,12 @@ Then, open the index.js file and change with the following:
 module.exports = chan => chan.say('Hey homie! How are you?')
 ```
 
+Last, you need to push your app to platform with:
+
+```
+fonos apps:deploy
+```
+
 ## Creating a SIPNetwork
 
 <details><summary>Define a VoIP service provider</summary>

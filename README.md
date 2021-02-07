@@ -51,7 +51,7 @@ module.exports = chan => chan.say('Hey homie! How are you?')
 
 <br />
 First, let's define a VoIP service provider with:
-<br />
+<br></br>
 
 > Use the information provided to you by homies
 
@@ -73,9 +73,9 @@ Creating provider HWTHDC2021... All done
 
 <details><summary>Add a new DID</summary>
 
-<br />
+<br></br>
 Add new DID with:
-<br />
+<br></br>
 
 ```bash
 $ fonos numbers:create
@@ -93,9 +93,9 @@ Creating number 17853178070... All done
 
 <details><summary>Create a new Domain</summary>
 
-<br />
+<br></br>
 Create new DID with:
-<br />
+<br></br>
 
 ```bash
 $ fonos fonos domains:create
@@ -114,9 +114,9 @@ Creating domain ACME Corp... All done
 </details>
 <details><summary>Create a new Agent</summary>
 
-<br />
+<br></br>
 Create new Agent with:
-<br />
+<br></br>
 
 ```bash
 $ fonos fonos agents:create

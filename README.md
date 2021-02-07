@@ -48,12 +48,9 @@ module.exports = chan => chan.say('Hey homie! How are you?')
 ## Creating a SIPNetwork
 
 <details><summary>Define a VoIP service provider</summary>
-
-<br />
-First, let's define a VoIP service provider with:
-<br></br>
-
-> Use the information provided to you by homies
+  
+  <br />
+  <p>First, let's define a VoIP service provider with:</p>
 
 ```bash
 $ fonos providers:create
@@ -69,13 +66,15 @@ Press ^C at any time to quit.
 ? does everything look good? Yes
 Creating provider HWTHDC2021... All done
 ```
+> Use the information provided to you by homies
+
 </details>
 
 <details><summary>Add a new DID</summary>
 
-<br></br>
-Add new DID with:
-<br></br>
+  <br />
+  <p>Add new DID with:</p>
+
 
 ```bash
 $ fonos numbers:create
@@ -93,9 +92,8 @@ Creating number 17853178070... All done
 
 <details><summary>Create a new Domain</summary>
 
-<br></br>
-Create new DID with:
-<br></br>
+  <br />
+  <p>Create new DID with:</p>
 
 ```bash
 $ fonos fonos domains:create
@@ -114,9 +112,8 @@ Creating domain ACME Corp... All done
 </details>
 <details><summary>Create a new Agent</summary>
 
-<br></br>
-Create new Agent with:
-<br></br>
+  <br />
+  <p>Create new Agent with:</p>
 
 ```bash
 $ fonos fonos agents:create

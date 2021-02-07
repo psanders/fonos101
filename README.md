@@ -47,7 +47,11 @@ module.exports = chan => chan.say('Hey homie! How are you?')
 
 ## Creating a SIPNetwork
 
-➊ First, let's define a VoIP service provider, and a DID with:
+<details><summary>Define a VoIP service provider</summary>
+
+<br />
+First, let's define a VoIP service provider with:
+<br />
 
 > Use the information provided to you by homies
 
@@ -65,8 +69,13 @@ Press ^C at any time to quit.
 ? does everything look good? Yes
 Creating provider HWTHDC2021... All done
 ```
+</details>
 
-And a new DID with:
+<details><summary>Add a new DID</summary>
+
+<br />
+Add new DID with:
+<br />
 
 ```bash
 $ fonos numbers:create
@@ -80,8 +89,13 @@ Press ^C at any time to quit.
 ? does everything look good? Yes
 Creating number 17853178070... All done
 ```
+</details>
 
-➋ Now, let's create a Domain
+<details><summary>Create a new Domain</summary>
+
+<br />
+Create new DID with:
+<br />
 
 ```bash
 $ fonos fonos domains:create
@@ -97,8 +111,12 @@ Press ^C at any time to quit.
 ? does everything look good? Yes
 Creating domain ACME Corp... All done
 ```
+</details>
+<details><summary>Create a new Agent</summary>
 
-➌ Next, let's create an Agent
+<br />
+Create new Agent with:
+<br />
 
 ```bash
 $ fonos fonos agents:create
@@ -112,6 +130,7 @@ Press ^C at any time to quit.
 ? privacy Private
 ? does everything look good? Yes
 ```
+</details>
 
 > You can check your work with `fonos [command]:ls
 

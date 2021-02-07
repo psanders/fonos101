@@ -98,7 +98,7 @@ Press ^C at any time to quit.
 Creating domain ACME Corp... All done
 ```
 
-➌ Now, let's create an Agent
+➌ Next, let's create an Agent
 
 ```bash
 $ fonos fonos agents:create

@@ -103,7 +103,7 @@ Creating number 17853178070... All done
   <p>Create new DID with:</p>
 
 ```bash
-$ fonos fonos domains:create
+$ fonos domains:create
 
 This utility will help you create a new Domain
 Press ^C at any time to quit.
@@ -123,7 +123,7 @@ Creating domain ACME Corp... All done
   <p>Create new Agent with:</p>
 
 ```bash
-$ fonos fonos agents:create
+$ fonos agents:create
 
 This utility will help you create a new Agent
 Press ^C at any time to quit.

@@ -150,9 +150,9 @@ Then, create a script with this code:
 
 ```
 // This will load the SDK and reuse your Fonos credentials
-const SDK = required('@fonos/sdk')
-const manager = new SDK.CallManager()
+const Fonos = required('@fonos/sdk')
+const callManager = new Fonos.CallManager()
 
 // A number you want to call and the application identifier
-manager.call('1785318070', 'a445hds')
+callManager.call('1785318070', 'a445hds')
 ```

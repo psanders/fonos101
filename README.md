@@ -6,7 +6,7 @@ I will not discuss installing a Fonos deployment in this repo because it is impr
 
 ## Requirements
 
-- NodeJS 12+ (Use nvm if possible)
+- NodeJS 14+ (Use nvm if possible)
 - Fonos command-line tool (install with `npm install -g @fonos/ctl`)
 - Request early access at [Fonoster.com](http://fonoster.com/), to receive a set of credentials
 - A set of credentials to a VoIP provider (provided)

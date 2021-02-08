@@ -23,7 +23,7 @@ Use the credentials you received to gain access to the platform. You can gain ac
 
 ```bash
 $ fonos login
-? endpoint api.fonoster.io
+? endpoint api.fonoster.io:50052
 ? accessKeyId ${YOUR ACCESS_KEY_ID}
 ? accessKeyToken ${YOUR ACCESS_KEY_TOKEN}
 ```

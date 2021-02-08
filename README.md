@@ -154,5 +154,5 @@ const Fonos = required('@fonos/sdk')
 const callManager = new Fonos.CallManager()
 
 // A number you want to call and the application identifier
-callManager.call('1785318070', 'a445hds')
+callManager.call('from','to', 'a445hds')
 ```

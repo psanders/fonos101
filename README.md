@@ -154,7 +154,7 @@ const Fonos = require('@fonos/sdk')
 const callManager = new Fonos.CallManager()
 
 // A number you want to call and the application identifier
-callManager.call({ from: '+19192121314', from: '+1912322329', from: 'default' })
+callManager.call({ from: '+19192121314', from: '+19128322329', from: 'default' })
 .then(r => console.log(r))
 .catch(e => console.error(e))
 ```

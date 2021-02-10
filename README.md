@@ -117,24 +117,6 @@ Press ^C at any time to quit.
 Creating domain ACME Corp... All done
 ```
 </details>
-<details><summary>Create a new Agent</summary>
-
-  <br />
-  <p>Create new Agent with:</p>
-
-```bash
-$ fonos agents:create
-
-This utility will help you create a new Agent
-Press ^C at any time to quit.
-? friendly name Jane Doe
-? username 1001
-? secret [hidden]
-? domains acme.com
-? privacy Private
-? does everything look good? Yes
-```
-</details>
 
 > You can check your work with `fonos [command]:ls
 

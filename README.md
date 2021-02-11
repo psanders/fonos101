@@ -32,7 +32,7 @@ $ fonos login
 
 First, use the command `fonos apps:init` to create an empty project.
 
-```
+```bash
 mkdir default
 cd default
 fonos apps:init
@@ -124,13 +124,13 @@ Creating domain ACME Corp... All done
 
 From within the folder of your `default` application, run the following command:
 
-```
+```bash
 npm i --save @fonos/sdk 
 ```
 
 Then, create a script with this code:
 
-```
+```javascript
 // This will load the SDK and reuse your Fonos credentials
 const Fonos = require('@fonos/sdk')
 const callManager = new Fonos.CallManager()

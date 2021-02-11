@@ -23,9 +23,9 @@ Use the credentials you received to gain access to the platform. You can gain ac
 
 ```bash
 $ fonos auth:login
-? endpoint api.fonoster.io:50052
-? accessKeyId ${YOUR ACCESS_KEY_ID}
-? accessKeyToken ${YOUR ACCESS_KEY_TOKEN}
+? api endpoint (api.fonoster.io:50052)
+? Access Key ID ${YOUR KEY ID}
+? Access Key Token [input is hidden] ${YOUR TOKEN}
 ```
 
 ## Creating a Programmable Voice Application (PVA)

@@ -98,8 +98,8 @@ Creating number 17853178070... All done
 </details>
 
 <details><summary>Create a new Domain</summary>
-
   <br />
+  <p>Before creating the domain you must obtain the numbers reference with fonos numbers:ls</p>
   <p>Create new DID with:</p>
 
 ```bash

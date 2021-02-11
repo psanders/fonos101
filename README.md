@@ -22,7 +22,7 @@ In this demo, I will show how to create a SIP Network and a Programmable Voice A
 Use the credentials you received to gain access to the platform. You can gain access with:
 
 ```bash
-$ fonos login
+$ fonos auth:login
 ? endpoint api.fonoster.io:50052
 ? accessKeyId ${YOUR ACCESS_KEY_ID}
 ? accessKeyToken ${YOUR ACCESS_KEY_TOKEN}

@@ -24,8 +24,8 @@ Use the credentials you received to gain access to the platform. You can gain ac
 ```bash
 $ fonos auth:login
 ? api endpoint (api.fonoster.io:50052)
-? Access Key ID ${YOUR KEY ID}
-? Access Key Token [input is hidden] ${YOUR TOKEN}
+? access key id ${YOUR KEY ID}
+? access key token [input is hidden] ${YOUR TOKEN}
 ```
 
 ## Creating a Programmable Voice Application (PVA)
@@ -88,12 +88,12 @@ $ fonos numbers:create
 
 This utility will help you create a new Number
 Press ^C at any time to quit.
-? number in e164 format 7853178070
+? number in E.164 format (e.g. +16471234567) +17853178070
 ? service provider HWTHDC2021
 ? aor link (leave empty)
 ? ingress app default
 ? does everything look good? Yes
-Creating number 17853178070... All done
+Creating number 17853178070... Done
 ```
 </details>
 
@@ -107,14 +107,14 @@ $ fonos domains:create
 
 This utility will help you create a new Domain
 Press ^C at any time to quit.
-? domain name ACME Corp
+? friendly name acme corp
 ? domain uri acme.com
 ? egress rule 
 ? number reference 
 ? access deny list 0.0.0.0/1
 ? access allow list 
 ? does everything look good? Yes
-Creating domain ACME Corp... All done
+Creating domain acme corp... Done
 ```
 </details>
 

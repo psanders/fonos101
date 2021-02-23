@@ -43,7 +43,7 @@ fonos apps:init
 Then, open the index.js file and change with the following:
 
 ```
-module.exports = chan => chan.say('Hey homie! How are you?')
+module.exports = chan => chan.say('Hello world')
 ```
 
 Last, you need to push your app to platform with:
@@ -67,11 +67,11 @@ Press ^C at any time to quit.
 ? friendly name HWTHDC2021
 ? username hwth
 ? secret [hidden]
-? host hwthdc.net
+? host newyork1.voip.ms
 ? transport tcp
-? expire 3600
+? expire 300
 ? does everything look good? Yes
-Creating provider HWTHDC2021... All done
+Creating provider HWTHDC2021... Done
 ```
 > Use the information provided to you by homies
 

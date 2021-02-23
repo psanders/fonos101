@@ -109,8 +109,8 @@ This utility will help you create a new Domain
 Press ^C at any time to quit.
 ? friendly name acme corp
 ? domain uri acme.com
-? egress number 
-? egress rule 
+? egress number 19106376139
+? egress rule .*
 ? access deny list 0.0.0.0/1
 ? access allow list 
 ? does everything look good? Yes

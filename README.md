@@ -2,7 +2,7 @@
 
 This is an introduction to the basics of Programmable Telecommunications in the Cloud with [Fonos](https://github.com/fonoster/fonos). I created this repo as part of the [Hacking With The Homies Developer Conference](https://github.com/detroitblacktech/hwthdc2020). 
 
-I will not discuss installing a Fonos deployment in this repo because it is impractical for the event. Instead, you can request access to the SaaS edition of Fonos at [Fonoster.com](http://fonoster.com/).
+I will not discuss installing a Fonos deployment in this repo because it is impractical for the event. Instead, you can request access to the demo server at [Fonoster.com](http://fonoster.com/).
 
 ## Requirements
 

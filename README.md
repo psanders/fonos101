@@ -1,14 +1,14 @@
 # Programmable Telecommunications in the Cloud without Twilio
 
-This is an introduction to the basics of Programmable Telecommunications in the Cloud with [Fonos](https://github.com/fonoster/fonos). I created this repo as part of the [Hacking With The Homies Developer Conference](https://github.com/detroitblacktech/hwthdc2020). 
+This is an introduction to the basics of Programmable Telecommunications in the Cloud with [Fonos](https://github.com/fonoster/fonos). I created this repo as part of the [Hacking With The Homies Developer Conference](https://github.com/detroitblacktech/hwthdc2020).
 
-I will not discuss installing a Fonos deployment in this repo because it is impractical for the event. Instead, you can request access to the demo server at [Fonoster.com](http://fonoster.com/).
+In this session, I will not discuss how to install Project Fonos because it is impractical for the event. Instead, you can request access to the demo server at [Fonoster.com](http://fonoster.com/).
 
 ## Requirements
 
+- Request early access at [Fonoster.com](http://fonoster.com/), to receive a set of credentials
 - NodeJS 12+ (Use nvm if possible)
 - Fonos command-line tool (install with `npm install -g @fonos/ctl`)
-- Request early access at [Fonoster.com](http://fonoster.com/), to receive a set of credentials
 - A set of credentials to a VoIP provider (provided)
 
 ## Overview
@@ -19,7 +19,7 @@ In this demo, I will show how to create a SIP Network and a Programmable Voice A
 
 ## Login into the platform
 
-Use the credentials you received to gain access to the platform. You can gain access with:
+To gain access to the server, use the set of credentials you received. You can gain access with:
 
 ```bash
 $ fonos auth:login
@@ -33,26 +33,26 @@ $ fonos auth:login
 First, use the command `fonos apps:init` to create an empty project.
 
 ```bash
-mkdir default
+mkdir hwth
 cd default
 fonos apps:init
 ```
 
 > You may use the default values
 
-Then, open the index.js file and change with the following:
+Then, open the `index.js` file and change with the following:
 
 ```
-module.exports = chan => chan.say('Hello world')
+module.exports = chan => chan.say('Welcome to hacking with the homies 2021.')
 ```
 
-Last, you need to push your app to platform with:
+Last, push your app to the platform with:
 
 ```
 fonos apps:deploy
 ```
 
-## Creating a SIPNetwork
+## Creating a SIP Network
 
 <details><summary>Define a VoIP service provider</summary>
   
@@ -70,10 +70,10 @@ Press ^C at any time to quit.
 ? host newyork1.voip.ms
 ? transport tcp
 ? expire 300
-? does everything look good? Yes
+? everything looks good? Yes
 Creating provider HWTHDC2021... Done
 ```
-> Use the information provided to you by homies
+> Use the information we sent to your email.
 
 </details>
 
@@ -91,8 +91,8 @@ Press ^C at any time to quit.
 ? number in E.164 format (e.g. +16471234567) +17853178070
 ? service provider HWTHDC2021
 ? aor link (leave empty)
-? ingress app default
-? does everything look good? Yes
+? ingress app hwth
+? everything looks good? Yes
 Creating number 17853178070... Done
 ```
 </details>
@@ -113,7 +113,7 @@ Press ^C at any time to quit.
 ? egress rule .*
 ? access deny list 0.0.0.0/1
 ? access allow list 
-? does everything look good? Yes
+? everything looks good? Yes
 Creating domain acme corp... Done
 ```
 </details>
@@ -122,7 +122,7 @@ Creating domain acme corp... Done
 
 ## Using the SDK to call a Number
 
-From within the folder of your `default` application, run the following command:
+From within the folder of your `hwth` application, run the following command:
 
 ```bash
 npm i --save @fonos/sdk 

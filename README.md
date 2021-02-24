@@ -135,7 +135,8 @@ Then, create a script with this code:
 const Fonos = require('@fonos/sdk')
 const callManager = new Fonos.CallManager()
 
-// A number you want to call and the application identifier
+// In the "from" use the Number we sent you. Then add a Number you want to call on the "to".
+// Finally, use the application reference on the "app" field.
 callManager.call({
  from: '+19198972120',
  to: '+17853178070',
